@@ -30,8 +30,11 @@ poetry add pdf-to-markdown
 # From local directory during development
 poetry add path/to/pdf_to_markdown_py
 
-# Directly from git repository
-poetry add git+https://github.com/username/pdf-to-markdown.git
+# Directly from git repository (HTTPS)
+poetry add git+https://github.com/simjak/pdf-to-markdown.git
+
+# Directly from git repository (SSH)
+poetry add git+ssh://git@github.com:simjak/pdf-to-markdown.git
 ```
 
 ### Using uv
@@ -42,8 +45,11 @@ uv pip install pdf-to-markdown
 # From local directory during development
 uv pip install path/to/pdf_to_markdown_py
 
-# Directly from git repository
-uv pip install git+https://github.com/username/pdf-to-markdown.git
+# Directly from git repository (HTTPS)
+uv pip install git+https://github.com/simjak/pdf-to-markdown.git
+
+# Directly from git repository (SSH)
+uv pip install git+ssh://git@github.com:simjak/pdf-to-markdown.git
 ```
 
 The package will automatically install required Node.js dependencies during installation, regardless of which package manager you use.
@@ -53,7 +59,7 @@ The package will automatically install required Node.js dependencies during inst
 ### Python API
 
 ```python
-from pdf_to_markdown import PdfToMarkdown
+from pdf_to_markdown_py import PdfToMarkdown
 
 # Initialize converter
 converter = PdfToMarkdown()
