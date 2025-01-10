@@ -1,0 +1,11 @@
+{
+  "name": "pdf-to-markdown",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Convert PDF files to Markdown format",
+  "main": "pdf-to-md.js",
+  "dependencies": {
+    "pdfjs-dist": "^3.11.174",
+    "lodash": "^4.17.21"
+  }
+}
